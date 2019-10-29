@@ -1,0 +1,95 @@
+\documentclass[12pt]{scrreprt}
+ \usepackage{amsmath}
+\title{Spectrum Theory}
+\author{Thomas Burlingame-Smith}
+ \date{Ongoing}
+\begin{document}
+\maketitle
+\chapter{Spectrum Basics}
+\section{What is a Spectrum?}
+          Spectra are portions of the infinite number line between a number point \textbf{a} and a number point \textbf{b} whereby only values where the difference between a given value in the sequence and the next value equal a quantum \textbf{q} are included.
+Thus a given spectrum can be defined as a tuple of the form:
+                                                                                            \begin{equation}  (a,a+q,a+2q,...,b)\end{equation}
+when the quantum is constant. As seen above,such spectra follow a simple algebraic pattern.  
+\section{The Quantum}
+	The quantum changes according to a function of the form \textbf{q=Q(i)}, where\textbf{ i$ \geq$ 0} ,\textbf{ Q(0) = 0}, and all values in the domain and range of \textbf{Q(i)} are positive. Such spectra can be represented by the tuple of the form:
+                                                                                                   \begin{equation}  (a+Q(0),a+Q(0)+Q(1),a+Q(0)+Q(1)+Q(2),...,b)\end{equation}
+or alternatively:
+                                                                                                    \begin{equation}  (a,a+Q(1),a+Q(1)+Q(2),...,b)\end{equation}
+\section{Quantum Truncating}
+Quantium Truncation is an operation which adjusts numbers on a number line to that of the spectrum. 
+The quantum floor for a number n where a $\leq$ n $\leq$ b is notated as: \textbf{$\lfloor$n$\rfloor^q$}\newline
+Let set \textbf{I} be the set of numbers on a spectrum \textbf{s} and \textbf{i} an element of \textbf{I}:\begin{center}  \textbf{$\lfloor$n$\rfloor^q $} is the largest value in \textbf{I}  such that \textbf{i $\leq$n}\end{center}
+Meanwhile, the quantum ceiling for a number n is notated as: \textbf{$\lceil$n$\rceil^q$}\\
+\begin{center} \textbf{$\lceil$n$\rceil^q $} is the smallest value  \textbf{I} such that \textbf{i $\geq$n}
+\end{center}
+\textit{Please note: \textbf{a} may also be included in subscript in order to denote where the spectrum begins}
+
+\subsection{Ceiling and Floor}
+Note that: \begin{equation}
+\textbf{$\lfloor$n$\rfloor$} = \textbf{$\lfloor$n$\rfloor^1$} 
+\end{equation}
+\begin{center}
+Likewise:\end{center}
+ \begin{equation}
+\textbf{$\lceil$n$\rceil$} = \textbf{$\lceil$n$\rceil^1$} 
+\end{equation}
+\chapter{Operations On the Spectrum}
+\section{Equaility}
+\textbf{$s_1$ = $s_2$} iff \textbf{$a_1 = a_2 \wedge b_1=b_2 \wedge q_1 = q_2$}
+\section{Single Spectrum Operations}
+Spectrum Addition: 
+\begin{equation} j +^s k = i_{j+k}
+\end{equation}
+Spectrum Subtraction
+\begin{equation} j -^s k = i_{j-k}
+\end{equation}
+Spectrum Multiplication
+\begin{equation} j*^s k = i_{jk}
+\end{equation}
+Spectrum Divison 
+\begin{equation} j /^s k = i_{j/k}
+\end{equation}
+\section{Multiple Spectrum Operations}
+Addition:
+\textbf{s$_1$ + s$_2$ = s$_3$} \textit{iff} \textbf{I$_1$$\cup$I$_2$ =I$_3$}
+\\Subtraction:
+\textbf{s$_1$ - s$_2$ = s$_3$} \textit{iff} \textbf{I$_1$$\triangle$I$_2$ =I$_3$}
+ 
+\chapter{Functions Over a Spectrum}
+\section{How Functions Run Over a Spectrum}
+A function \textbf{f(x)} ran over a given spectrum \textbf{s} of a given \textbf{a} and \textbf{b} and of quantium \textbf{q} is represented as:
+\begin{equation}[f(x)]_{a,b}^q
+\end{equation}
+Here, \textbf{f(x) =$ [f(x)]_{a,b}^q$} when \textbf{$f(x) \in I$} and \textbf{$[f(x)]_{a,b}^q$} is undefined otherwise.
+\par However, if we want to run a function over a spectrum such that the full domain of \textbf{f(x)} is mapped onto \textbf{s}, we can then express \textbf{f(x)} as  \textbf{$\lfloor$f(x)$\rfloor_a^q $} or \textbf{$\lceil$f(x)$\rceil_a^q $}.
+\chapter{Overloaded Spectrum}
+\section{Introduction}
+A spectrum is overloaded when one describes numbers beyond the scope of the spectrum. \textbf{s} is overloaded when \textbf{k} is mapped onto \textbf{s} and \textbf{k $<$a $\vee $ k$>$ b } and \textbf{k} is an element of the domain of \textbf{Q(x)}. 
+\section{Notation and Descriptions}
+The overloading of a spectrum where \textbf{k $>$ b}  is represent by $\aleph_n$ where \textbf{n} is the number of steps in the sequence above \textbf{b} the value  $\aleph_n$ would be if the spectrum extended to that value  $\aleph_n$. Meanwhile, overloading where  \textbf{k $<$ a} is represented by  $\aleph_n^-$ where \textbf{n} is the number of steps in the sequence below \textbf{a} if the spectrum had extended to $\aleph_n^-$.
+\section{Overloaded Logic}
+Overloaded logic is logic whereby something can exist as partially true and partially false. Overloaded logic exists on spectrum \textbf{(0,1)} with \textbf{Q(x) = x} where \textbf{0 $\leq$ x $\leq$ u} where \textbf{u} is an abritary value.
+ \par0, as in boolean algebra, denotes something as false while greater values represent more trueness. 
+\chapter{Overlayed Spectra}
+\section{How Spectra Are Overlayed}
+A spectrum \textbf{s$_n$} is overlayed on a spectrum \textbf{s$_{n-1}$} when  \textbf{s$_n$} is defined only when an event \textbf{e} occurs within a certain area on the spectrum \textbf{s$_{n-1}$}.A group of overlayed spectrum can be represented by a tuple as follows: 
+   \begin{equation} ((s_1,d_1),(s_2,d_2),...(s_n))\end{equation},where \textbf{d} is the set of values on the spectrum which note when the next spectrum in the sequence can be defined.
+\chapter{Quantum Geometry}
+\section{Introduction}
+A quantum geometry is a geometry where the possible values of at least a few measurements lay on a spectrum. Of course, this definition is wide open and allows for various possible geometries within those that already exist.
+\section{Unfilled Quantum Geometry}
+An unfilled quantum geometry requires only one dimensional measurements to lay on a spectrum while higher dimentional measurements (area, volume,ect...) allow any number on the infinite number line. 
+\subsection{A \textit{Quantum} Thought Experiment and Unfilled Quantum Geometry}
+In \textit{quantum} physics, particles are often quantified as probability spaces as classical physics does not accurately describe their motion. The minimum scale at which classical mechanics can still describe is the plank length which for our purposes will be denoted $\hbar$. 
+\par If we want to consider possible distances over which an object may move within the expected bound of classical mechanics. Then, we can note a spectrum \textbf{s} of \textbf{q=$\hbar$} and bounds \text{a = $\hbar$} and \textbf{b = U}, where \textbf{U} is the quantum floor of the maximum length of the universe in multiples of $\hbar$. Any distanced traveled by a classical object must have then traveled a distance represented by this spectrum. 
+\par From here, we can, then, describe allowed motion in any possible direction. We define these distances as possible line segment from which we then form 2D shapes. Since this geometry is unfilled, the shapes then can take on any area which may appear as long every line segment forming the shape is of a length that is a multiple of $\hbar$.
+\section{Filled Quantum Geometry}
+In a filled quantum geometry, aside from one-dimensional measurements, measurements of area, also, lay on a spectrum. The minimum length that a one-dimensional measurement can be in quantum space is always equivalent to the quantum. However, this is not always the case with area in a filled quantum geometry.  The number of steps in the sequence of the spectrum which must be transverse by the length of a line segment which forms the shape before the minimum area occurs is call the filling factor, \textbf{f}.
+\subsection{Continuation of the \textit{Quantum} Thought Experiment}
+\par Previously, we seek to described the limits of the intervals of motion in the above quantium world. Now, we will describe the smallest possible sized objects of a Euclidean shape can exist in the above quantium world (we will ignore volume). Area will have to lay on a spectrum where units squared must be on the same spectrum as the units of length. The area of a rectangle is its length multiple by it width, and because any multiple inherits the factors of its factors, we can expect that any square formed from possible line segments in our filled quantum Euclidean geometry would be able to exist within it; therefore, \textbf{f=1}. 
+\par Now let's look at the triangle. The area of a triangle is \textbf{.5Bh}. Now let's try to form a right triangle purely out of line segments with each segment of length $\hbar$. Such a triangle would have an area of $.5\hbar$ which is not allowed in our geometry. In order for the area of the right triangle to reach $\hbar$, at least one length must be 2$\hbar$; therefore \textbf{f=2}.
+\section{Multi-Dimensional Fillness}
+Any number of geometries may be formed with different axioms over which quantum may play a role. These geometries can be classified via fillness. For example, a four-dimensional geometry where area and hypervolume but line length and volume do not would have 2,4-fillness.
+
+\end{document}
