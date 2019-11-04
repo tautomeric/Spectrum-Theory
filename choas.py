@@ -19,7 +19,7 @@ class catorgories:
         local = 0
         values.sort()
         num_in_cats = self.cat_specs.copy()
-        last_local = len(values)
+        last_local = len(values)-1
         
         for i in self.cat_specs: 
             max_in = self.cat_specs[i]
