@@ -17,6 +17,7 @@ class catorgories:
         
     def catagorize(self,values=np.array([0],dtype="int8")):
         local = 0
+        values.append(0)
         values.sort()
         num_in_cats = self.cat_specs.copy()
         last_local = len(values)-1
@@ -25,10 +26,11 @@ class catorgories:
             max_in = self.cat_specs[i]
             num_of = 0
             while(values[local]<=max_in):
-                num_of = num_of + 1
-                local = local+1
                 if(last_local<=local):
                     break
+                num_of = num_of + 1
+                local = local+1
+                
             
             num_in_cats[i] = num_of
        
