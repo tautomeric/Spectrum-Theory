@@ -10,3 +10,7 @@ spectrum class while overlay allows handling of overlayed spectra.
 The catorgories class in choas is used in the spectrum class and so choas.py is in this 
 repository. choas offers other uses such as random number generation and computer speed
 estimation. 
+
+#uneven_spectrum.py
+uneven_spec class is a subclass of spectrum in spectral.py. Allows for nonconstant quantium by taking
+a lambda as a instance variable q
