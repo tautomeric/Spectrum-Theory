@@ -174,3 +174,11 @@ class tools:
                 
         return (wins+1)/(len(data)+2)
     
+    def shannon_entropy(p=[.5,.5],b=2):
+        entropy=0
+        
+        for i in p:
+            entropy+=i*math.log(i,b)    
+            
+        return -1*entropy
+    
